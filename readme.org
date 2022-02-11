@@ -1,4 +1,9 @@
 #+TITLE: Emacs helper to query NEB's Tm calculator API 
-Prompts user for primers P1 and P2, the PCR reagents being used, and the conentration of primers used. Returns the annealing temperature for PCR. Also add the Ta to the =kill-ring= so you can yank it into your buffer.
+Prompts user for primers P1 and P2, the PCR reagents being used, and the conentration of primers used. Returns the annealing temperature for PCR. 
 
 NOTE: This is NOT a part of NEB
+
+* Usage
+Single entry point: call =get-annealing-temperature=. You will be prompted for two primer sequences, the PCR reagents and concentration of primers in mM. That's it!
+
+PS The annealing temperature Ta is added to the =kill-ring= so you can easily yank it into your buffer.
